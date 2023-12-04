@@ -18,11 +18,11 @@ public class Principal extends javax.swing.JFrame {
    */
   public Principal() {
     initComponents();
+    getRootPane().setDefaultButton(jButton1);
     jTFUsername.setText(null);
     jPFPasswordUser.setText(null);
     jTFUsername.putClientProperty("JTextField.placeholderText", "Introduce un Usuario");
     jPFPasswordUser.putClientProperty("JTextField.placeholderText", "Introduce una contraseña");
-    System.out.println("123456");
   }
 
   /**
@@ -208,10 +208,11 @@ public class Principal extends javax.swing.JFrame {
     if (evt.getExtendedKeyCode() == KeyEvent.VK_ENTER) {
       jButton1.requestFocus();
     }
+
   }//GEN-LAST:event_jPFPasswordUserKeyPressed
 
   private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    // TODO add your handling code here:
+    System.out.println("asdasdas");
   }//GEN-LAST:event_jButton1ActionPerformed
 
   /**
